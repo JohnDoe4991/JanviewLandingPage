@@ -1,7 +1,7 @@
 const pricingTiers = [
   {
     title: "Free",
-    monthlyPrice: 0,
+    monthlyPrice: 100,
     buttonText: "Get started for free",
     popular: false,
     inverse: false,
@@ -15,7 +15,7 @@ const pricingTiers = [
   },
   {
     title: "Pro",
-    monthlyPrice: 9,
+    monthlyPrice: 1000,
     buttonText: "Sign up now",
     popular: true,
     inverse: true,
@@ -31,7 +31,7 @@ const pricingTiers = [
   },
   {
     title: "Business",
-    monthlyPrice: 19,
+    monthlyPrice: 2000,
     buttonText: "Sign up now",
     popular: false,
     inverse: false,
@@ -51,5 +51,5 @@ const pricingTiers = [
 ];
 
 export const Pricing = () => {
-  return null;
+  return "PRicing"
 };

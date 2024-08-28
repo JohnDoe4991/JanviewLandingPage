@@ -3,6 +3,7 @@ import { Hero } from "@/sections/Hero";
 import { Janview } from "@/sections/Janview";
 import { LogoTicker } from "@/sections/LogoTicker";
 import { ProductShowcase } from "@/sections/ProductShowcase";
+import { Pricing } from "@/sections/Pricing";
 
 export default function Home() {
   return <>
@@ -11,5 +12,6 @@ export default function Home() {
   <Janview/>
   <LogoTicker/>
   <ProductShowcase/>
+  <Pricing/>
   </> ;
 }
