@@ -592,6 +592,35 @@ video {
   line-height: 1.25rem;
   letter-spacing: -0.025em;
 }
+.section-title {
+  background-image: linear-gradient(to bottom, var(--tw-gradient-stops));
+  --tw-gradient-from: #000 var(--tw-gradient-from-position);
+  --tw-gradient-to: rgb(0 0 0 / 0) var(--tw-gradient-to-position);
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
+  --tw-gradient-to: #001E80 var(--tw-gradient-to-position);
+  background-clip: text;
+  text-align: center;
+  font-size: 1.875rem;
+  line-height: 2.25rem;
+  font-weight: 700;
+  letter-spacing: -0.05em;
+  color: transparent;
+}
+@media (min-width: 768px) {
+
+  .section-title {
+    font-size: 54px;
+    line-height: 60px;
+  }
+}
+.product-description {
+  text-align: center;
+  font-size: 22px;
+  line-height: 30px;
+  letter-spacing: -0.025em;
+  --tw-text-opacity: 1;
+  color: rgb(1 13 62 / var(--tw-text-opacity));
+}
 .animate {
     transform: scale(1) !important;
     opacity: 1 !important;

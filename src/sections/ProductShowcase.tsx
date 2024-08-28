@@ -43,10 +43,10 @@ export const ProductShowcase = () => {
           <div className="flex justify-center">
             <div className="tag">Boost your productivity with Janview</div>
           </div>
-          <h2 className="text-center text-3xl md:text-[54px] md:leading-[60px] font-bold tracking-tighter bg-gradient-to-b from-black to-[#001E80] text-transparent bg-clip-text mt-5">
+          <h2 className="section-title mt-5">
             A more effective way to track progress
           </h2>
-          <p className="text-center text-[22px] leading-[30px] tracking-tight text-[#010D3E] mt-5">
+          <p className="product-description mt-5">
             Janview helps you track progress, collaborate with your team, and manage tasks more efficiently.
           </p>
         </div>
@@ -74,10 +74,10 @@ export const ProductShowcase = () => {
             <div className="flex justify-center">
               <div className="tag">Convenient and comprehensive, all in one location.</div>
             </div>
-            <h2 className="text-center text-3xl md:text-[54px] md:leading-[60px] font-bold tracking-tighter bg-gradient-to-b from-black to-[#001E80] text-transparent bg-clip-text mt-5">
+            <h2 className="section-title mt-5">
               Maintain a close connection with your clients.
             </h2>
-            <p className="text-center text-[22px] leading-[30px] tracking-tight text-[#010D3E] mt-5">
+            <p className="product-description mt-5">
               Janview centralizes essential business information and resources, providing everything you need to efficiently manage operations and streamline processes.
             </p>
           </div>

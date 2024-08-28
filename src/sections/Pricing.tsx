@@ -51,5 +51,16 @@ const pricingTiers = [
 ];
 
 export const Pricing = () => {
-  return "PRicing"
+  return (
+    <section>
+      <div className="container">
+        <h2 className="section-title">
+Pricing
+        </h2>
+        <p className="product-description">
+Upgrade for unlimited tasks, better integrations, exclusive features, and more.
+        </p>
+      </div>
+    </section>
+  )
 };
