@@ -39,7 +39,7 @@ export const ProductShowcase = () => {
   return (
     <section className="bg-gradient-to-b from-[#FFFFFF] to-[#D2DCFF] py-16 overflow-x-clip">
       <div className="container">
-        <div className="max-w-[540px] mx-auto">
+        <div className="section-heading">
           <div className="flex justify-center">
             <div className="tag">Boost your productivity with Janview</div>
           </div>
