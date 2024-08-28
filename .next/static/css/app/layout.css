@@ -579,6 +579,19 @@ video {
   height: 5rem;
   width: auto;
 }
+.tag {
+  display: inline-flex;
+  border-radius: 0.5rem;
+  border-width: 1px;
+  border-color: rgb(34 34 34 / 0.1);
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  letter-spacing: -0.025em;
+}
 .absolute {
   position: absolute;
 }
@@ -763,6 +776,11 @@ video {
 .bg-gradient-to-b {
   background-image: linear-gradient(to bottom, var(--tw-gradient-stops));
 }
+.from-\[\#FFFFFF\] {
+  --tw-gradient-from: #FFFFFF var(--tw-gradient-from-position);
+  --tw-gradient-to: rgb(255 255 255 / 0) var(--tw-gradient-to-position);
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
+}
 .from-black {
   --tw-gradient-from: #000 var(--tw-gradient-from-position);
   --tw-gradient-to: rgb(0 0 0 / 0) var(--tw-gradient-to-position);
@@ -770,6 +788,21 @@ video {
 }
 .to-\[\#001E80\] {
   --tw-gradient-to: #001E80 var(--tw-gradient-to-position);
+}
+.to-\[\#D2DCFF\] {
+  --tw-gradient-to: #D2DCFF var(--tw-gradient-to-position);
+}
+.to-\[\] {
+  --tw-gradient-to:  var(--tw-gradient-to-position);
+}
+.to-\[\#\] {
+  --tw-gradient-to: # var(--tw-gradient-to-position);
+}
+.to-\[\#00\] {
+  --tw-gradient-to: #00 var(--tw-gradient-to-position);
+}
+.to-\[\#001E\] {
+  --tw-gradient-to: #001E var(--tw-gradient-to-position);
 }
 .bg-clip-text {
   background-clip: text;
@@ -807,6 +840,10 @@ video {
 .py-20 {
   padding-top: 5rem;
   padding-bottom: 5rem;
+}
+.py-24 {
+  padding-top: 6rem;
+  padding-bottom: 6rem;
 }
 .py-3 {
   padding-top: 0.75rem;
@@ -919,15 +956,18 @@ video {
 .\[mask-image\:linear-gradient\(to_right\2c transparent\2c black\2c transparent\)\] {
   mask-image: linear-gradient(to right,transparent,black,transparent);
 }
+
 .hover\:bg-blue-700:hover {
   --tw-bg-opacity: 1;
   background-color: rgb(29 78 216 / var(--tw-bg-opacity));
 }
+
 .hover\:shadow-lg:hover {
   --tw-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
   --tw-shadow-colored: 0 10px 15px -3px var(--tw-shadow-color), 0 4px 6px -4px var(--tw-shadow-color);
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
+
 @media (min-width: 375px) {
 
   .sm\:grid-cols-2 {
@@ -939,6 +979,7 @@ video {
     line-height: 2.5rem;
   }
 }
+
 @media (min-width: 768px) {
 
   .md\:absolute {
@@ -1012,6 +1053,7 @@ video {
     line-height: 1;
   }
 }
+
 @media (min-width: 1200px) {
 
   .lg\:left-0 {
