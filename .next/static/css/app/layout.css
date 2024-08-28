@@ -716,6 +716,9 @@ video {
 .h-5 {
   height: 1.25rem;
 }
+.h-6 {
+  height: 1.5rem;
+}
 .h-auto {
   height: auto;
 }
@@ -724,6 +727,9 @@ video {
 }
 .w-5 {
   width: 1.25rem;
+}
+.w-6 {
+  width: 1.5rem;
 }
 .max-w-\[540px\] {
   max-width: 540px;
@@ -796,14 +802,24 @@ video {
 .overflow-x-clip {
   overflow-x: clip;
 }
+.rounded-3xl {
+  border-radius: 1.5rem;
+}
 .rounded-full {
   border-radius: 9999px;
 }
 .rounded-lg {
   border-radius: 0.5rem;
 }
+.border {
+  border-width: 1px;
+}
 .border-2 {
   border-width: 2px;
+}
+.border-\[\#F1F1F1\] {
+  --tw-border-opacity: 1;
+  border-color: rgb(241 241 241 / var(--tw-border-opacity));
 }
 .border-gray-300 {
   --tw-border-opacity: 1;
@@ -853,6 +869,9 @@ video {
 }
 .bg-clip-text {
   background-clip: text;
+}
+.p-10 {
+  padding: 2.5rem;
 }
 .p-4 {
   padding: 1rem;
@@ -913,9 +932,6 @@ video {
   font-size: 3rem;
   line-height: 1;
 }
-.text-\[22px\] {
-  font-size: 22px;
-}
 .text-base {
   font-size: 1rem;
   line-height: 1.5rem;
@@ -934,9 +950,6 @@ video {
 .font-medium {
   font-weight: 500;
 }
-.leading-\[30px\] {
-  line-height: 30px;
-}
 .leading-tight {
   line-height: 1.25;
 }
@@ -945,10 +958,6 @@ video {
 }
 .tracking-tighter {
   letter-spacing: -0.05em;
-}
-.text-\[\#010D3E\] {
-  --tw-text-opacity: 1;
-  color: rgb(1 13 62 / var(--tw-text-opacity));
 }
 .text-black\/60 {
   color: rgb(0 0 0 / 0.6);
@@ -985,6 +994,11 @@ video {
 .shadow {
   --tw-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
   --tw-shadow-colored: 0 1px 3px 0 var(--tw-shadow-color), 0 1px 2px -1px var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+.shadow-\[0_7px_14px_\#EAEAEA\] {
+  --tw-shadow: 0 7px 14px #EAEAEA;
+  --tw-shadow-colored: 0 7px 14px var(--tw-shadow-color);
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 .shadow-sm {
@@ -1105,14 +1119,6 @@ video {
   .md\:text-7xl {
     font-size: 4.5rem;
     line-height: 1;
-  }
-
-  .md\:text-\[54px\] {
-    font-size: 54px;
-  }
-
-  .md\:leading-\[60px\] {
-    line-height: 60px;
   }
 }
 
