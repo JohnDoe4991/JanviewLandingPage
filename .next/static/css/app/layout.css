@@ -626,6 +626,17 @@ video {
   margin-right: auto;
   max-width: 540px;
 }
+.card {
+  width: 100%;
+  max-width: 20rem;
+  border-radius: 1.5rem;
+  border-width: 1px;
+  border-color: rgb(34 34 34 / 0.1);
+  padding: 2.5rem;
+  --tw-shadow: 0 7px 14px #EAEAEA;
+  --tw-shadow-colored: 0 7px 14px var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
 .animate {
     transform: scale(1) !important;
     opacity: 1 !important;
@@ -665,6 +676,27 @@ video {
 }
 .top-\[524px\] {
   top: 524px;
+}
+.-left-\[350px\] {
+  left: -350px;
+}
+.top-\[-100px\] {
+  top: -100px;
+}
+.top-\[-137px\] {
+  top: -137px;
+}
+.-right-\[350px\] {
+  right: -350px;
+}
+.-right-\[331px\] {
+  right: -331px;
+}
+.top-\[px\] {
+  top: px;
+}
+.top-\[19px\] {
+  top: 19px;
 }
 .z-20 {
   z-index: 20;
@@ -706,6 +738,9 @@ video {
 .mt-\[30px\] {
   margin-top: 30px;
 }
+.ml-2 {
+  margin-left: 0.5rem;
+}
 .flex {
   display: flex;
 }
@@ -730,6 +765,9 @@ video {
 .h-auto {
   height: auto;
 }
+.h-10 {
+  height: 2.5rem;
+}
 .w-4 {
   width: 1rem;
 }
@@ -741,6 +779,9 @@ video {
 }
 .w-full {
   width: 100%;
+}
+.w-10 {
+  width: 2.5rem;
 }
 .max-w-\[540px\] {
   max-width: 540px;
@@ -771,6 +812,9 @@ video {
 }
 .grid-cols-1 {
   grid-template-columns: repeat(1, minmax(0, 1fr));
+}
+.flex-row {
+  flex-direction: row;
 }
 .flex-col {
   flex-direction: column;
@@ -810,6 +854,9 @@ video {
 }
 .gap-6 {
   gap: 1.5rem;
+}
+.gap-2 {
+  gap: 0.5rem;
 }
 .space-y-10 > :not([hidden]) ~ :not([hidden]) {
   --tw-space-y-reverse: 0;
@@ -894,6 +941,11 @@ video {
   --tw-gradient-to: rgb(0 0 0 / 0) var(--tw-gradient-to-position);
   --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
 }
+.from-white {
+  --tw-gradient-from: #fff var(--tw-gradient-from-position);
+  --tw-gradient-to: rgb(255 255 255 / 0) var(--tw-gradient-to-position);
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
+}
 .to-\[\#001E80\] {
   --tw-gradient-to: #001E80 var(--tw-gradient-to-position);
 }
@@ -956,6 +1008,10 @@ video {
   padding-top: 2rem;
   padding-bottom: 2rem;
 }
+.py-24 {
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+}
 .pb-20 {
   padding-bottom: 5rem;
 }
@@ -1004,6 +1060,9 @@ video {
 }
 .leading-tight {
   line-height: 1.25;
+}
+.leading-5 {
+  line-height: 1.25rem;
 }
 .tracking-tight {
   letter-spacing: -0.025em;
@@ -1079,6 +1138,21 @@ video {
 }
 .ease-in-out {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.\[mask-image\:linear-gradient\(to_bottom\2c transparent\2c black\2c black\2c transparent\)\] {
+  mask-image: linear-gradient(to bottom,transparent,black,black,transparent);
+}
+.\[mask-image\:linear-gradient\(to_bottom\2c transparent\2c black_\2c black\2c transparent\)\] {
+  mask-image: linear-gradient(to bottom,transparent,black ,black,transparent);
+}
+.\[mask-image\:linear-gradient\(to_bottom\2c transparent\2c black_25\%\2c black\2c transparent\)\] {
+  mask-image: linear-gradient(to bottom,transparent,black 25%,black,transparent);
+}
+.\[mask-image\:linear-gradient\(to_bottom\2c transparent\2c black_25\%\2c black_\2c transparent\)\] {
+  mask-image: linear-gradient(to bottom,transparent,black 25%,black ,transparent);
+}
+.\[mask-image\:linear-gradient\(to_bottom\2c transparent\2c black_25\%\2c black_75\%\2c transparent\)\] {
+  mask-image: linear-gradient(to bottom,transparent,black 25%,black 75%,transparent);
 }
 .\[mask-image\:linear-gradient\(to_right\2c transparent\2c black\2c transparent\)\] {
   mask-image: linear-gradient(to right,transparent,black,transparent);
