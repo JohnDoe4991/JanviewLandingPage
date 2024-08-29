@@ -780,6 +780,9 @@ video {
 .flex-1 {
   flex: 1 1 0%;
 }
+.flex-none {
+  flex: none;
+}
 .grow {
   flex-grow: 1;
 }
@@ -800,9 +803,6 @@ video {
 }
 .flex-col {
   flex-direction: column;
-}
-.flex-wrap {
-  flex-wrap: wrap;
 }
 .items-center {
   align-items: center;
@@ -990,6 +990,9 @@ video {
 }
 .pb-20 {
   padding-bottom: 5rem;
+}
+.pr-14 {
+  padding-right: 3.5rem;
 }
 .pt-8 {
   padding-top: 2rem;
