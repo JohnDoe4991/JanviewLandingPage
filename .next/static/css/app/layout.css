@@ -1126,19 +1126,14 @@ video {
   position: absolute;
 }
 
-.before\:top-2::before {
-  content: var(--tw-content);
-  top: 0.5rem;
-}
-
 .before\:bottom-0::before {
   content: var(--tw-content);
   bottom: 0px;
 }
 
-.before\:h-full::before {
+.before\:top-2::before {
   content: var(--tw-content);
-  height: 100%;
+  top: 0.5rem;
 }
 
 .before\:w-full::before {
