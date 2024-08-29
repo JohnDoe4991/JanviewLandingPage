@@ -1,3 +1,4 @@
+"use client"
 import Image from 'next/image';
 import searchImg from '@/assets/search.png';
 import moneyDataImg from '@/assets/money_data.png';
@@ -16,9 +17,9 @@ export const Janview = () => {
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
         </p>
         <div className="mt-4">
-          <a href="#contact-section" className="bg-blue-600 text-white px-6 py-2 rounded-full hover:bg-blue-700 transition">
+          <button onClick={() => window.location.href='https://janviewpro.com/#'} className="bg-blue-600 text-white px-6 py-2 rounded-full hover:bg-blue-700 transition">
             Request a Demo
-          </a>
+          </button>
         </div>
       </div>
       <div className="flex-1 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
