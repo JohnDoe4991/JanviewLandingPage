@@ -7,7 +7,7 @@ const pricingTiers = [
   {
     title: "User",
     monthlyPrice: 100,
-    buttonText: "Get started for free",
+    buttonText: "Get started",
     popular: false,
     inverse: false,
     features: [
@@ -57,7 +57,7 @@ const pricingTiers = [
 
 export const Pricing = () => {
   return (
-    <section className="py-20 bg-white">
+    <section id="pricing" className="py-20 bg-white">
       <div className="container">
         <div className="section-heading">
         <h2 className="section-title">Pricing</h2>

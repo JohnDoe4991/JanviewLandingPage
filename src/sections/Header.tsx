@@ -1,3 +1,4 @@
+"use client"
 import ArrowRight from '@/assets/arrow-right.svg';
 import Logo from '@/assets/jvp-logo.png';
 import Image from 'next/image';
@@ -9,7 +10,7 @@ export const Header = () => {
    <div className="flex justify-center items-center py-3 bg-black text-white text-sm gap-3">
     <p className="text-white/60 hidden md:block">Streamline your workflow and boost your productivity </p>
     <div className="inline-flex gap-1 items-center">
-    <p>Get started for free </p>
+    <p>Get started </p>
     <ArrowRight className="w-4 h-4 inline-flex justify-center items-center" />
     </div>
     </div>
@@ -19,12 +20,12 @@ export const Header = () => {
 <Image src={Logo} alt="Saas Logo" height={120} width={120} />
 <MenuIcon className="w-5 h-5 md:hidden" />
 <nav className="hidden md:flex gap-6 text-black/60 items-center">
-  <a href="#">About</a>
-  <a href="#">Features</a>
-  <a href="#">Customers</a>
-  <a href="#">Updates</a>
-  <a href="#">Help</a>
-  <button className="bg-black text-white px-4 py-2 rounded-lg font-medium inline-flex items-center justify-center tracking-tight">Get for free</button>
+  <a href="#hero">About</a>
+  <a href="#features">Features</a>
+  <a href="#pricing">Pricing</a>
+  <a href="#testimonials">Customers</a>
+  <a href="#footer">Help</a>
+  <button onClick={() => window.location.href='https://janviewpro.com/#'} className="bg-black text-white px-4 py-2 rounded-lg font-medium inline-flex items-center justify-center tracking-tight">Get Started</button>
 </nav>
 </div>
 </div>

@@ -113,7 +113,7 @@ repeatType: "loop"
 
 export const Testimonials = () => {
   return (
-    <section className="bg-white">
+    <section id="testimonials" className="bg-white">
       <div className="container">
         <div className="section-heading">
         <div className="flex justify-center">

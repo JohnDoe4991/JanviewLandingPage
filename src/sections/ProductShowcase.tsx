@@ -9,10 +9,10 @@ import { motion, useScroll, useTransform } from 'framer-motion';
 
 export const ProductShowcase = () => {
   const sectionRef = useRef(null);
-  const {scrollYProgress } = useScroll({
+  const { scrollYProgress } = useScroll({
     target: sectionRef,
     offset: ["start end", "end start"],
-  })
+  });
 
   const translateY = useTransform(scrollYProgress, [0, 1], [150, -150]);
 
@@ -46,7 +46,7 @@ export const ProductShowcase = () => {
   }, []);
 
   return (
-    <section ref={sectionRef} className="bg-gradient-to-b from-[#FFFFFF] to-[#D2DCFF] py-16 overflow-x-clip">
+    <section id="features" ref={sectionRef} className="bg-gradient-to-b from-[#FFFFFF] to-[#D2DCFF] py-16 overflow-x-clip">
       <div className="container">
         <div className="section-heading">
           <div className="flex justify-center">
@@ -60,28 +60,26 @@ export const ProductShowcase = () => {
           </p>
         </div>
         <div className="relative">
-          <Image
-            ref={productRef}
-            src={productImage}
-            alt="Product Image"
+          <motion.div
             className="mt-10 mb-10 transform transition duration-500 ease-in-out scale-75 opacity-0"
-          />
-          <motion.img
-            src={pyramidImage.src}
-            alt="Pyramid Image"
-            height={250}
-            width={250}
+            ref={productRef}
+            animate={{ opacity: 1 }}
+            transition={{ duration: 0.5 }}
+          >
+            <Image src={productImage} alt="Product Image" layout="intrinsic" />
+          </motion.div>
+          <motion.div
             className="hidden md:block absolute -right-36 -top-32"
             style={{ translateY }}
-          />
-          <motion.img
-            src={tubeImage.src}
-            alt="Tube Image"
-            height={220}
-            width={220}
+          >
+            <Image src={pyramidImage} alt="Pyramid Image" width={250} height={250} layout="intrinsic" />
+          </motion.div>
+          <motion.div
             className="hidden md:block absolute bottom-24 -left-36"
             style={{ translateY }}
-          />
+          >
+            <Image src={tubeImage} alt="Tube Image" width={220} height={220} layout="intrinsic" />
+          </motion.div>
           <div className="max-w-[540px] mx-auto">
             <div className="flex justify-center">
               <div className="tag">Convenient and comprehensive, all in one location.</div>
@@ -93,12 +91,14 @@ export const ProductShowcase = () => {
               Janview centralizes essential business information and resources, providing everything you need to efficiently manage operations and streamline processes.
             </p>
           </div>
-          <Image
-            ref={franchiseRef}
-            src={UnitFranchise}
-            alt="Product Image"
+          <motion.div
             className="mt-10 transform transition duration-500 ease-in-out scale-75 opacity-0"
-          />
+            ref={franchiseRef}
+            animate={{ opacity: 1 }}
+            transition={{ duration: 0.5 }}
+          >
+            <Image src={UnitFranchise} alt="Unit Franchise" layout="intrinsic" />
+          </motion.div>
         </div>
       </div>
     </section>
