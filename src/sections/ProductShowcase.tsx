@@ -9,10 +9,10 @@ import { motion, useScroll, useTransform } from 'framer-motion';
 
 export const ProductShowcase = () => {
   const sectionRef = useRef(null);
-  const { scrollYProgress } = useScroll({
+  const {scrollYProgress } = useScroll({
     target: sectionRef,
     offset: ["start end", "end start"],
-  });
+  })
 
   const translateY = useTransform(scrollYProgress, [0, 1], [150, -150]);
 
@@ -79,7 +79,7 @@ export const ProductShowcase = () => {
             alt="Tube Image"
             height={220}
             width={220}
-            className="hidden md:block absolute bottom-24 -left-36 z-20"
+            className="hidden md:block absolute bottom-24 -left-36"
             style={{ translateY }}
           />
           <div className="max-w-[540px] mx-auto">
@@ -97,7 +97,7 @@ export const ProductShowcase = () => {
             ref={franchiseRef}
             src={UnitFranchise}
             alt="Product Image"
-            className="mt-10 transform transition duration-500 ease-in-out scale-75 opacity-0 z-10"
+            className="mt-10 transform transition duration-500 ease-in-out scale-75 opacity-0"
           />
         </div>
       </div>
