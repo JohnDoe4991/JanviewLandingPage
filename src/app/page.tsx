@@ -7,10 +7,12 @@ import { Pricing } from "@/sections/Pricing";
 import { Testimonials } from "@/sections/Testimonials";
 import { CallToAction } from "@/sections/CallToAction";
 import { Footer } from "@/sections/Footer";
+import { ScrollToTop } from "@/sections/ScrollToTop";
 
 export default function Home() {
   return <>
   <Header/>
+  <ScrollToTop/>
   <Hero/>
   <Janview/>
   <LogoTicker/>

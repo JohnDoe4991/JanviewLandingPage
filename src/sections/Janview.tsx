@@ -22,28 +22,28 @@ export const Janview = () => {
           </button>
         </div>
       </div>
-      <div className="flex-1 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
-        <div className="bg-white p-4 text-center rounded-lg shadow hover:shadow-lg transition">
+      <div className="flex-1 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6"> {/* Increased gap */}
+        <div className="bg-white p-4 text-center rounded-lg shadow-md hover:shadow-xl hover:scale-110 transform transition-transform duration-300 ease-in-out">
           <h3 className="text-blue-600 text-xl mb-2">1. Visualize</h3>
           <p className="text-gray-800 mb-4">Monitor key information to track your growth</p>
           <Image src={searchImg} alt="Visualize" className="mx-auto max-w-full h-auto border-2 border-gray-300 rounded-lg shadow-sm" />
         </div>
-        <div className="bg-white p-4 text-center rounded-lg shadow hover:shadow-lg transition">
+        <div className="bg-white p-4 text-center rounded-lg shadow-md hover:shadow-xl hover:scale-110 transform transition-transform duration-300 ease-in-out">
           <h3 className="text-blue-600 text-xl mb-2">2. Manage</h3>
           <p className="text-gray-800 mb-4">Manage all customer data</p>
           <Image src={moneyDataImg} alt="Manage" className="mx-auto max-w-full h-auto border-2 border-gray-300 rounded-lg shadow-sm" />
         </div>
-        <div className="bg-white p-4 text-center rounded-lg shadow hover:shadow-lg transition">
+        <div className="bg-white p-4 text-center rounded-lg shadow-md hover:shadow-xl hover:scale-110 transform transition-transform duration-300 ease-in-out">
           <h3 className="text-blue-600 text-xl mb-2">3. Reports</h3>
           <p className="text-gray-800 mb-4">Create daily reports available 24/7/365</p>
           <Image src={calendarImg} alt="Reports" className="mx-auto max-w-full h-auto border-2 border-gray-300 rounded-lg shadow-sm" />
         </div>
-        <div className="bg-white p-4 text-center rounded-lg shadow hover:shadow-lg transition">
+        <div className="bg-white p-4 text-center rounded-lg shadow-md hover:shadow-xl hover:scale-110 transform transition-transform duration-300 ease-in-out">
           <h3 className="text-blue-600 text-xl mb-2">4. Invoices</h3>
           <p className="text-gray-800 mb-4">View invoices loans and fee details</p>
           <Image src={invoiceImg} alt="Invoices" className="mx-auto max-w-full h-auto border-2 border-gray-300 rounded-lg shadow-sm" />
         </div>
-        <div className="bg-white p-4 text-center rounded-lg shadow hover:shadow-lg transition">
+        <div className="bg-white p-4 text-center rounded-lg shadow-md hover:shadow-xl hover:scale-110 transform transition-transform duration-300 ease-in-out">
           <h3 className="text-blue-600 text-xl mb-2">5. Logistics</h3>
           <p className="text-gray-800 mb-4">Add Customers, Billing changes, and more...</p>
           <Image src={workGearDocImg} alt="Logistics" className="mx-auto max-w-full h-auto border-2 border-gray-300 rounded-lg shadow-sm" />

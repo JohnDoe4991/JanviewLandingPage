@@ -104,7 +104,7 @@ className={twMerge(
     repeatType: "loop",
   }}
   className="bg-[linear-gradient(to_right,#DD7DDF,#E1CD86,#BBCB92,#71C2EF,#3BFFFF,#DD7DDF,#E1CD86,#BBCB92,#71C2EF,#3BFFFF)] [background-size:200%] text-transparent bg-clip-text font-medium">
-    Popular
+    Our Most Popular
     </motion.span>
   </div>
   )}
