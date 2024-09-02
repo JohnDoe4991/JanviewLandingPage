@@ -61,7 +61,7 @@ export const ProductShowcase = () => {
         </div>
         <div className="relative">
           <motion.div
-            className="mt-10 mb-10 transform transition duration-500 ease-in-out scale-75 opacity-0"
+            className="mt-10 mb-10 transform transition duration-500 ease-in-out scale-50 opacity-0"
             ref={productRef}
             animate={{ opacity: 1 }}
             transition={{ duration: 0.5 }}
@@ -92,7 +92,7 @@ export const ProductShowcase = () => {
             </p>
           </div>
           <motion.div
-            className="mt-10 transform transition duration-500 ease-in-out scale-75 opacity-0"
+            className="mt-10 transform transition duration-500 ease-in-out scale-50 opacity-0"
             ref={franchiseRef}
             animate={{ opacity: 1 }}
             transition={{ duration: 0.5 }}
