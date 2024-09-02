@@ -1,53 +1,19 @@
 "use client";
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import ArrowRight from "@/assets/arrow-right.svg";
 import Logo from "@/assets/jvp-logo.png";
 import Image from "next/image";
 import MenuIcon from "@/assets/menu.svg";
 
 export const Header = () => {
-  const [visible, setVisible] = useState(true);
-
-  useEffect(() => {
-    let lastScrollY = window.scrollY;
-
-    const handleScroll = () => {
-      const currentScrollY = window.scrollY;
-
-      if (currentScrollY > lastScrollY) {
-        setVisible(false);
-      } else {
-        setVisible(true);
-      }
-
-      lastScrollY = currentScrollY;
-    };
-
-    const handleMouseMove = (event: MouseEvent) => {
-      if (event.clientY < window.innerHeight * 0.1) {
-        setVisible(true);
-      }
-    };
-
-    window.addEventListener("scroll", handleScroll);
-    window.addEventListener("mousemove", handleMouseMove);
-
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-      window.removeEventListener("mousemove", handleMouseMove);
-    };
-  }, []);
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const handleNavClick = () => {
-    setVisible(false);
+    setIsMenuOpen(false);
   };
 
   return (
-    <header
-      className={`sticky top-0 z-20 transition-transform duration-300 ${
-        visible ? "translate-y-0" : "-translate-y-full"
-      } backdrop-blur-sm`}
-    >
+    <header className="top-0 z-20 backdrop-blur-sm">
       <div className="flex justify-center items-center py-3 bg-black text-white text-sm gap-3">
         <p className="text-white/60 hidden md:block">
           Streamline your workflow and boost your productivity
@@ -61,8 +27,11 @@ export const Header = () => {
         <div className="container">
           <div className="flex items-center justify-between">
             <Image src={Logo} alt="Saas Logo" height={120} width={120} />
-            <MenuIcon className="w-5 h-5 md:hidden" />
-            <nav className="hidden md:flex gap-6 text-black/60 items-center">
+            <MenuIcon
+              className="w-5 h-5 md:hidden"
+              onClick={() => setIsMenuOpen(!isMenuOpen)}
+            />
+            <nav className={`${isMenuOpen ? 'block' : 'hidden'} md:flex gap-6 text-black/60 items-center`}>
               <a href="#hero" onClick={handleNavClick}>
                 About
               </a>
