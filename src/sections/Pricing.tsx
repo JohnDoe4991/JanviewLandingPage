@@ -64,12 +64,12 @@ export const Pricing = () => {
       <div id="pricing" className="container">
         <div className="section-heading">
         <h2 className="section-title">Pricing</h2>
-        <p className="product-description mt-5">
+        <p className="product-description mt-3">
           Upgrade for unlimited tasks, better integrations,
           exclusive features, and more.
         </p>
         </div>
-        <div className="flex flex-col gap-6 items-center mt-10 lg:flex-row lg:items-end lg:justify-center">
+        <div className="flex flex-col gap-6 items-center mt-4 lg:flex-row lg:items-end lg:justify-center">
           {pricingTiers.map(
             ({
               title,
