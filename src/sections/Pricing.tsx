@@ -1,12 +1,13 @@
 "use client";
 import { FaCheck } from 'react-icons/fa';
 import { twMerge } from 'tailwind-merge';
-import {motion } from 'framer-motion';
+import { motion } from 'framer-motion';
 
 const pricingTiers = [
   {
     title: "User",
     monthlyPrice: 100,
+    description: null,
     buttonText: "Get started",
     popular: false,
     inverse: false,
@@ -21,6 +22,7 @@ const pricingTiers = [
   {
     title: "Pro",
     monthlyPrice: 1000,
+    description: "Everything included in User, plus: Priority support, advanced support, export support",
     buttonText: "Sign up now",
     popular: true,
     inverse: true,
@@ -37,6 +39,7 @@ const pricingTiers = [
   {
     title: "Business",
     monthlyPrice: 2000,
+    description: "Everything included in Pro, plus: Dedicated account manager, custom fields, advanced analytics, export capabilities, API access, advanced security features",
     buttonText: "Sign up now",
     popular: false,
     inverse: false,
@@ -71,6 +74,7 @@ export const Pricing = () => {
             ({
               title,
               monthlyPrice,
+              description,
               buttonText,
               popular,
               inverse,
@@ -78,8 +82,9 @@ export const Pricing = () => {
             },) => (
 <div
 className={twMerge(
-  "card",
-  inverse === true && "border-black bg-black text-white"
+  "card p-6",  // Adjust padding to make cards smaller
+  inverse === true && "border-black bg-black text-white",
+  "max-w-xs" // Set a max-width for cards to make them smaller
   )}
   >
   <div className="flex justify-between">
@@ -92,7 +97,7 @@ className={twMerge(
     {title}
     </h3>
   {popular === true && (
-  <div className="inline-flex text-sm px-4 py-1.5 rounded-xl border border-white/20">
+  <div className="inline-flex text-sm px-3 py-1 rounded-xl border border-white/20"> {/* Reduced padding */}
   <motion.span
   animate={{
     backgroundPositionX: "100%",
@@ -109,26 +114,38 @@ className={twMerge(
   </div>
   )}
   </div>
-  <div className="flex items-baseline gap-1 mt-[30px]">
-    <span className="text-4xl font-bold tracking-tighter leading-none">
+  <div className="flex items-baseline gap-1 mt-5"> {/* Adjusted margin-top */}
+    <span className="text-3xl font-bold tracking-tighter leading-none"> {/* Reduced font size */}
       ${monthlyPrice}
       </span>
     <span className="tracking-tight font-bold text-black/50">
     /month
     </span>
 </div>
+<div>
+                  {description && (
+                    <p
+                      className={twMerge(
+                        "text-sm text-black/60 mt-3", // Reduced margin-top
+                        inverse === true && "text-white/80" // Apply white text for inverse (Pro) cards
+                      )}
+                    >
+                      {description}
+                    </p>
+                  )}
+                </div>
 <button
 className={twMerge(
-  "btn btn-primary w-full mt-[30px]",
+  "btn btn-primary w-full mt-5", // Adjusted margin-top
   inverse === true && "bg-white text-black"
   )}
   >
   {buttonText}
   </button>
-<ul className="flex flex-col gap-5 mt-8">
+<ul className="flex flex-col gap-4 mt-6"> {/* Reduced gap and margin-top */}
   {features.map((feature) => (
-    <li className="text-sm flex items-center gap-4">
-<FaCheck className="w-6 h-6"/>
+    <li className="text-sm flex items-center gap-3"> {/* Reduced gap */}
+<FaCheck className="w-5 h-5"/> {/* Reduced icon size */}
       <span>{feature}</span>
       </li>
   ))}
