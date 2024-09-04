@@ -26,12 +26,12 @@ offset: ["start end", "end start"],
     Version 2.0 is here
     </div>
     <h1 className="text-5xl md:text-7xl font-bold tracking-tighter bg-gradient-to-b from-black to-[#001E80] text-transparent bg-clip-text mt-6">
-      Pathway to productivity
+      Pathway to Productivity
       </h1>
     <p className="text-xl text-white tracking-tight mt-6">
-      Your ultimate platform for driving business success, with an app tailored to track your progress, inspire your efforts, and celebrate your achievements.
-       Janview provides complete transparency and equips you with all the essential tools to efficiently manage and scale your
-       business.
+    Your ultimate platform for driving business success, with an app tailored to streamline operations,
+     enhance financial control, and foster growth.
+     Janview provides complete transparency and equips you with all the essential tools to efficiently manage and scale your business.
        </p>
        <div className="flex gap-1 items-center mt-[30px]">
         <button onClick={() => window.location.href='https://janviewpro.com/#'} className="btn btn-primary">Get Started</button>

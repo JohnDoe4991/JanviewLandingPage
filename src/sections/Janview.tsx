@@ -18,7 +18,11 @@ export const Janview = () => {
         Your Business."
         </h2>
         <p className="text-gray-600 text-base mb-6 text-center lg:text-left">
-        Janview empowers businesses with real-time insights and streamlined operations, making it easier than ever to monitor progress and achieve goals. Whether you're managing a small team or scaling a large enterprise, Janview's intuitive platform offers the tools you need to stay organized, foster collaboration, and make data-driven decisions. With robust features designed to adapt to your unique workflow, Janview ensures that every task is tracked, every project is on schedule, and every milestone is celebrated. Discover how Janview can transform your business and elevate your productivity.        </p>
+        Janview empowers businesses with real-time insights and streamlined operations, making it easier than ever to monitor progress and achieve goals.
+        Whether you're managing a small team or scaling a larger enterprise, Janview's intuitive platform offers the tools you need to stay organized, foster collaboration, and make data-driven decisions.
+        With robust features designed to adapt to your unique workflow, Janview ensures that every task is tracked, every project is on schedule, and every milestone is celebrated.
+        Discover how Janview can transform your business and elevate your productivity.
+         </p>
         <div className="mt-4">
           <button onClick={() => window.location.href='https://janviewpro.com/#'} className="bg-blue-600 text-white px-6 py-2 rounded-full hover:bg-blue-700 transition">
             Request a Demo
@@ -28,27 +32,27 @@ export const Janview = () => {
       <div className="flex-1 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
         <div className="bg-white p-4 text-center rounded-lg shadow-md hover:shadow-2xl hover:shadow-black/80 hover:scale-110 transform transition-transform duration-300 ease-in-out">
           <h3 className="text-blue-600 text-xl mb-2">1. Visualize</h3>
-          <p className="text-gray-800 mb-4">Monitor key information</p>
+          <p className="text-gray-800 mb-4">Centralize key business data for quick, informed decisions.</p>
           <Image src={searchImg} alt="Visualize" className="mx-auto max-w-full h-auto border-2 border-gray-300 rounded-lg shadow-sm" />
         </div>
         <div className="bg-white p-4 text-center rounded-lg shadow-md hover:shadow-2xl hover:shadow-black/80 hover:scale-110 transform transition-transform duration-300 ease-in-out">
           <h3 className="text-blue-600 text-xl mb-2">2. Manage</h3>
-          <p className="text-gray-800 mb-4">Manage all customer data</p>
+          <p className="text-gray-800 mb-4">Streamline client data management, from invoicing to communication.</p>
           <Image src={moneyDataImg} alt="Manage" className="mx-auto max-w-full h-auto border-2 border-gray-300 rounded-lg shadow-sm" />
         </div>
         <div className="bg-white p-4 text-center rounded-lg shadow-md hover:shadow-2xl hover:shadow-black/80 hover:scale-110 transform transition-transform duration-300 ease-in-out">
           <h3 className="text-blue-600 text-xl mb-2">3. Reports</h3>
-          <p className="text-gray-800 mb-4">Create daily reports available 24/7/365</p>
+          <p className="text-gray-800 mb-4">Access detailed reports anytime to stay informed on key metrics.</p>
           <Image src={calendarImg} alt="Reports" className="mx-auto max-w-full h-auto border-2 border-gray-300 rounded-lg shadow-sm" />
         </div>
         <div className="bg-white p-4 text-center rounded-lg shadow-md hover:shadow-2xl hover:shadow-black/80 hover:scale-110 transform transition-transform duration-300 ease-in-out">
           <h3 className="text-blue-600 text-xl mb-2">4. Invoices</h3>
-          <p className="text-gray-800 mb-4">View invoices loans and fee details</p>
+          <p className="text-gray-800 mb-4">Easily handle invoices and financial details to minimize errors.</p>
           <Image src={invoiceImg} alt="Invoices" className="mx-auto max-w-full h-auto border-2 border-gray-300 rounded-lg shadow-sm" />
         </div>
         <div className="bg-white p-4 text-center rounded-lg shadow-md hover:shadow-2xl hover:shadow-black/80 hover:scale-110 transform transition-transform duration-300 ease-in-out">
           <h3 className="text-blue-600 text-xl mb-2">5. Logistics</h3>
-          <p className="text-gray-800 mb-4">Add Customers, Billing changes, and more...</p>
+          <p className="text-gray-800 mb-4">Add customers, update billing, and manage logistics in one place.</p>
           <Image src={workGearDocImg} alt="Logistics" className="mx-auto max-w-full h-auto border-2 border-gray-300 rounded-lg shadow-sm" />
         </div>
       </div>
