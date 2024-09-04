@@ -56,7 +56,7 @@ export const ProductShowcase = () => {
             A more effective way to track progress
           </h2>
           <p className="product-description mt-5">
-            Janview helps you track progress, collaborate with your team, and manage tasks more efficiently.
+          Janview helps you monitor progress, collaborate with your team, and manage tasks more efficiently, ensuring every aspect of your business runs smoothly.
           </p>
         </div>
         <div className="relative">
@@ -88,7 +88,7 @@ export const ProductShowcase = () => {
               Maintain a close connection with your clients.
             </h2>
             <p className="product-description mt-5">
-              Janview centralizes essential business information and resources, providing everything you need to efficiently manage operations and streamline processes.
+            Stay connected with your clients and your team by centralizing essential business information and resources in one easy-to-access platform.
             </p>
           </div>
           <motion.div
