@@ -60,8 +60,8 @@ const pricingTiers = [
 
 export const Pricing = () => {
   return (
-    <section id="pricing" className="py-20 bg-white">
-      <div className="container">
+    <section className="py-20 bg-white">
+      <div id="pricing" className="container">
         <div className="section-heading">
         <h2 className="section-title">Pricing</h2>
         <p className="product-description mt-5">
@@ -82,9 +82,9 @@ export const Pricing = () => {
             },) => (
 <div
 className={twMerge(
-  "card p-6",  // Adjust padding to make cards smaller
+  "card p-6",
   inverse === true && "border-black bg-black text-white",
-  "max-w-xs" // Set a max-width for cards to make them smaller
+  "max-w-xs"
   )}
   >
   <div className="flex justify-between">
@@ -97,7 +97,7 @@ className={twMerge(
     {title}
     </h3>
   {popular === true && (
-  <div className="inline-flex text-sm px-3 py-1 rounded-xl border border-white/20"> {/* Reduced padding */}
+  <div className="inline-flex text-sm px-3 py-1 rounded-xl border border-white/20">
   <motion.span
   animate={{
     backgroundPositionX: "100%",
@@ -114,20 +114,26 @@ className={twMerge(
   </div>
   )}
   </div>
-  <div className="flex items-baseline gap-1 mt-5"> {/* Adjusted margin-top */}
-    <span className="text-3xl font-bold tracking-tighter leading-none"> {/* Reduced font size */}
-      ${monthlyPrice}
-      </span>
-    <span className="tracking-tight font-bold text-black/50">
-    /month
-    </span>
+  <div className="flex items-baseline gap-1 mt-5">
+  <span className="text-3xl font-bold tracking-tighter leading-none">
+    ${monthlyPrice}
+  </span>
+  <span
+    className={twMerge(
+      "tracking-tight font-bold",
+      inverse === true ? "text-white/60" : "text-black/50"
+    )}
+  >
+    / month
+  </span>
 </div>
+
 <div>
                   {description && (
                     <p
                       className={twMerge(
-                        "text-sm text-black/60 mt-3", // Reduced margin-top
-                        inverse === true && "text-white/80" // Apply white text for inverse (Pro) cards
+                        "text-xs text-black/60 mt-3",
+                        inverse === true && "text-white/80"
                       )}
                     >
                       {description}
@@ -136,16 +142,16 @@ className={twMerge(
                 </div>
 <button
 className={twMerge(
-  "btn btn-primary w-full mt-5", // Adjusted margin-top
+  "btn btn-primary w-full mt-5",
   inverse === true && "bg-white text-black"
   )}
   >
   {buttonText}
   </button>
-<ul className="flex flex-col gap-4 mt-6"> {/* Reduced gap and margin-top */}
+<ul className="flex flex-col gap-4 mt-6">
   {features.map((feature) => (
-    <li className="text-sm flex items-center gap-3"> {/* Reduced gap */}
-<FaCheck className="w-5 h-5"/> {/* Reduced icon size */}
+    <li className="text-sm flex items-center gap-3">
+<FaCheck className="w-5 h-5"/>
       <span>{feature}</span>
       </li>
   ))}
