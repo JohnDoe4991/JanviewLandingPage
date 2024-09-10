@@ -1,5 +1,5 @@
 "use client";
-import jantizeLogo from '@/assets/jantize_logo.png';
+// import jantizeLogo from '@/assets/jantize_logo.png';
 import crossFit from "@/assets/CrossFitOakRidge.png"
 import parish from "@/assets/PTC.png"
 import joeHudson from "@/assets/JoeHudson.png"
@@ -26,22 +26,24 @@ export const LogoTicker = () => {
           >
             {/* First set of logos */}
             <div className="flex gap-14 lg:gap-20">
-              <Image src={jantizeLogo} alt="Jantize Logo" className="logo-ticker-image" />
+              {/* <Image src={jantizeLogo} alt="Jantize Logo" className="logo-ticker-image" /> */}
               <Image src={crossFit} alt="Crossfit Logo" className="logo-ticker-image" />
               <Image src={parish} alt="Parish Logo" className="logo-ticker-image" />
               <Image src={joeHudson} alt="JoeHudson Logo" className="logo-ticker-image" />
               <Image src={flatIron} alt="FlatIron Logo" className="logo-ticker-image" />
               <Image src={barber} alt="VBarber Logo" className="logo-ticker-image" />
+              <Image src={crossFit} alt="Crossfit Logo" className="logo-ticker-image" />
             </div>
 
             {/* Duplicate set of logos */}
             <div className="flex gap-14 lg:gap-20">
-              <Image src={jantizeLogo} alt="Jantize Logo" className="logo-ticker-image" />
+              {/* <Image src={jantizeLogo} alt="Jantize Logo" className="logo-ticker-image" /> */}
               <Image src={crossFit} alt="Crossfit Logo" className="logo-ticker-image" />
               <Image src={parish} alt="Parish Logo" className="logo-ticker-image" />
               <Image src={joeHudson} alt="JoeHudson Logo" className="logo-ticker-image" />
               <Image src={flatIron} alt="FlatIron Logo" className="logo-ticker-image" />
               <Image src={barber} alt="VBarber Logo" className="logo-ticker-image" />
+              <Image src={crossFit} alt="Crossfit Logo" className="logo-ticker-image" />
             </div>
           </motion.div>
         </div>
