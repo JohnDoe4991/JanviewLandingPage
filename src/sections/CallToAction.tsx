@@ -38,11 +38,16 @@ export const CallToAction = () => {
           </motion.div>
         </div>
         <div className="flex gap-2 mt-10 justify-center">
-          <button onClick={() => window.location.href='https://janviewpro.com/#'} className="btn btn-primary">Get started</button>
-          <button onClick={() => window.location.href='https://janviewpro.com/#'} className="btn btn-text gap-1">
-            <span>Learn more</span>
-            <ArrowRight className="h-5 w-5" />
-          </button>
+        <a
+                href="#contact"
+                className="bg-black text-white px-4 py-2 rounded-lg font-medium inline-flex items-center justify-center tracking-tight"
+              >
+                Get Started
+              </a>
+              <a href="#janview" className="btn btn-text gap-1">
+  <span>Learn more</span>
+  <ArrowRight className="h-5 w-5"/>
+</a>
         </div>
       </div>
     </section>
