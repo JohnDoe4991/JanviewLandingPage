@@ -24,9 +24,9 @@ export const Janview = () => {
         Discover how Janview can transform your business and elevate your productivity.
          </p>
         <div className="mt-4">
-          <button onClick={() => window.location.href='https://janviewpro.com/#'} className="bg-blue-600 text-white px-6 py-2 rounded-full hover:bg-blue-700 transition">
-            Request a Demo
-          </button>
+        <a href="#contact" className="bg-blue-600 text-white px-6 py-2 rounded-full hover:bg-blue-700 transition">
+  Request a Demo
+</a>
         </div>
       </div>
       <div className="flex-1 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
