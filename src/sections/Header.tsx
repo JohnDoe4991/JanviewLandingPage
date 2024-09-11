@@ -96,7 +96,7 @@ export const Header = () => {
                     <a
                       href="#contact"
                       onClick={handleNavClick}
-                      className="bg-black text-white px-4 py-2 rounded-lg font-medium inline-flex items-center justify-center tracking-tight w-full text-center hover:shadow-md transition"
+                      className="bg-black text-white px-4 py-2 rounded-lg font-medium inline-flex items-center justify-center tracking-tight w-full text-center hover:shadow-md transition sm:hidden"
                     >
                       Get Started
                     </a>
