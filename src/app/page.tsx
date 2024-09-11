@@ -16,11 +16,11 @@ export default function Home() {
   <ScrollToTop/>
   <Hero/>
   <Janview/>
-  <LogoTicker/>
   <ProductShowcase/>
   <Pricing/>
   <Testimonials/>
   <CallToAction/>
+  <LogoTicker/>
   <Contact/>
   <Footer/>
   </> ;
