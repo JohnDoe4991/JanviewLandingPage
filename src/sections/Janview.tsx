@@ -8,7 +8,7 @@ import workGearDocImg from '@/assets/work_gear_doc.png';
 
 export const Janview = () => {
   return (
-    <div className="bg-gray-100 px-5 py-20 flex flex-col space-y-10 lg:space-y-0 lg:flex-row items-stretch">
+    <div id="janview" className="bg-gray-100 px-5 py-20 flex flex-col space-y-10 lg:space-y-0 lg:flex-row items-stretch">
       <div className="flex-1 p-5 flex flex-col justify-center items-center bg-gray-100">
         <h2 className="text-gray-800 text-3xl sm:text-4xl md:text-5xl leading-tight mb-4 text-center lg:text-left">
         "Janview Offers Complete
@@ -24,9 +24,9 @@ export const Janview = () => {
         Discover how Janview can transform your business and elevate your productivity.
          </p>
         <div className="mt-4">
-          <button onClick={() => window.location.href='https://janviewpro.com/#'} className="bg-blue-600 text-white px-6 py-2 rounded-full hover:bg-blue-700 transition">
-            Request a Demo
-          </button>
+        <a href="#contact" className="bg-blue-600 text-white px-6 py-2 rounded-full hover:bg-blue-700 transition">
+  Request a Demo
+</a>
         </div>
       </div>
       <div className="flex-1 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
