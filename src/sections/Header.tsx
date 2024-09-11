@@ -11,6 +11,7 @@ export const Header = () => {
   const handleNavClick = () => {
     setIsMenuOpen(false);
   };
+  
 
   return (
     <header className="top-0 z-20 backdrop-blur-sm">
@@ -44,18 +45,16 @@ export const Header = () => {
               <a href="#testimonials" onClick={handleNavClick}>
                 Customers
               </a>
-              <a href="#footer" onClick={handleNavClick}>
-                Help
+              <a href="#contact" onClick={handleNavClick}>
+                Contact
               </a>
-              <button
-                onClick={() => {
-                  handleNavClick();
-                  window.location.href = "https://janviewpro.com/#";
-                }}
+              <a
+                href="#contact"
+                onClick={handleNavClick}
                 className="bg-black text-white px-4 py-2 rounded-lg font-medium inline-flex items-center justify-center tracking-tight"
               >
                 Get Started
-              </button>
+              </a>
             </nav>
           </div>
         </div>

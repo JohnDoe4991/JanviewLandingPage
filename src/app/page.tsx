@@ -8,6 +8,7 @@ import { Testimonials } from "@/sections/Testimonials";
 import { CallToAction } from "@/sections/CallToAction";
 import { Footer } from "@/sections/Footer";
 import { ScrollToTop } from "@/sections/ScrollToTop";
+import { Contact } from "@/sections/Contact";
 
 export default function Home() {
   return <>
@@ -20,6 +21,7 @@ export default function Home() {
   <Pricing/>
   <Testimonials/>
   <CallToAction/>
+  <Contact/>
   <Footer/>
   </> ;
 }

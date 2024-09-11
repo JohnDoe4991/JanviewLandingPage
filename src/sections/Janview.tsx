@@ -8,7 +8,7 @@ import workGearDocImg from '@/assets/work_gear_doc.png';
 
 export const Janview = () => {
   return (
-    <div className="bg-gray-100 px-5 py-20 flex flex-col space-y-10 lg:space-y-0 lg:flex-row items-stretch">
+    <div id="janview" className="bg-gray-100 px-5 py-20 flex flex-col space-y-10 lg:space-y-0 lg:flex-row items-stretch">
       <div className="flex-1 p-5 flex flex-col justify-center items-center bg-gray-100">
         <h2 className="text-gray-800 text-3xl sm:text-4xl md:text-5xl leading-tight mb-4 text-center lg:text-left">
         "Janview Offers Complete
