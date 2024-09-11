@@ -14,7 +14,7 @@ export const Header = () => {
 
   return (
     <header className="top-0 z-20 backdrop-blur-sm">
-      {/* Top notification bar */}
+
       <div className="flex justify-center items-center py-3 bg-black text-white text-sm gap-3">
         <p className="text-white/60 hidden md:block">
           Streamline your workflow and boost your productivity
@@ -29,7 +29,7 @@ export const Header = () => {
       <div className="py-5">
         <div className="container">
           <div className="flex items-center justify-between">
-            {/* Logo */}
+
             <Image src={Logo} alt="Saas Logo" height={120} width={120} />
 
 
@@ -64,7 +64,7 @@ export const Header = () => {
 
             {isMenuOpen && (
                 <div className="absolute top-20 right-0 bg-transparent mt-2 p-4 md:hidden z-10 rounded-lg w-max">
-                  <nav className="flex flex-col items-start gap-3">
+                  <nav className="flex flex-col items-end gap-3">
                     <a
                       href="#features"
                       onClick={handleNavClick}
