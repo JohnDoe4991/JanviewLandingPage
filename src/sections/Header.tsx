@@ -63,30 +63,46 @@ export const Header = () => {
 
 
             {isMenuOpen && (
-              <div className="absolute top-16 left-0 w-full bg-white shadow-lg p-5 md:hidden z-10">
-                <nav className="flex flex-col items-center gap-4">
-                  <a href="#features" onClick={handleNavClick} className="text-black">
-                    Features
-                  </a>
-                  <a href="#pricing" onClick={handleNavClick} className="text-black">
-                    Pricing
-                  </a>
-                  <a href="#testimonials" onClick={handleNavClick} className="text-black">
-                    Customers
-                  </a>
-                  <a href="#contact" onClick={handleNavClick} className="text-black">
-                    Contact
-                  </a>
-                  <a
-                    href="#contact"
-                    onClick={handleNavClick}
-                    className="bg-black text-white px-4 py-2 rounded-lg font-medium inline-flex items-center justify-center tracking-tight w-full text-center"
-                  >
-                    Get Started
-                  </a>
-                </nav>
-              </div>
-            )}
+                <div className="absolute top-20 right-0 bg-transparent mt-2 p-4 md:hidden z-10 rounded-lg w-max">
+                  <nav className="flex flex-col items-start gap-3">
+                    <a
+                      href="#features"
+                      onClick={handleNavClick}
+                      className="text-black px-2 py-1 rounded cursor-pointer hover:shadow-md transition"
+                    >
+                      Features
+                    </a>
+                    <a
+                      href="#pricing"
+                      onClick={handleNavClick}
+                      className="text-black px-2 py-1 rounded cursor-pointer hover:shadow-md transition"
+                    >
+                      Pricing
+                    </a>
+                    <a
+                      href="#testimonials"
+                      onClick={handleNavClick}
+                      className="text-black px-2 py-1 rounded cursor-pointer hover:shadow-md transition"
+                    >
+                      Customers
+                    </a>
+                    <a
+                      href="#contact"
+                      onClick={handleNavClick}
+                      className="text-black px-2 py-1 rounded cursor-pointer hover:shadow-md transition"
+                    >
+                      Contact
+                    </a>
+                    <a
+                      href="#contact"
+                      onClick={handleNavClick}
+                      className="bg-black text-white px-4 py-2 rounded-lg font-medium inline-flex items-center justify-center tracking-tight w-full text-center hover:shadow-md transition"
+                    >
+                      Get Started
+                    </a>
+                  </nav>
+                </div>
+              )}
           </div>
         </div>
       </div>
