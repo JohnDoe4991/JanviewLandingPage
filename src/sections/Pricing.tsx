@@ -66,7 +66,7 @@ export const Pricing = () => {
       <div id="pricing" className="container">
         <div className="section-heading">
           <h2 className="section-title">Pricing</h2>
-          <p className="product-description mt-3">
+          <p className="product-description mt-3 mb-8">
             Upgrade for unlimited tasks, better integrations, exclusive features, and more.
           </p>
         </div>
@@ -127,8 +127,6 @@ export const Pricing = () => {
                     </p>
                   )}
                 </div>
-
-                {/* Changed the button to an anchor tag that links to the #contact section */}
                 <a
                   href="#contact"
                   className={twMerge(
@@ -147,7 +145,20 @@ export const Pricing = () => {
                     </li>
                   ))}
                 </ul>
+                {popular === true && (
+  <div className="flex justify-center items-center w-full text-sm px-3 py-1 rounded-xl border border-white/20 mt-4">
+    <motion.span
+      animate={{ opacity: [0.6, 1, 0.6], scale: [1, 1.1, 1] }}
+      transition={{ duration: 2, repeat: Infinity, ease: "easeInOut" }}
+      className="text-white font-bold shine-animation"
+    >
+      TOP SELLER
+    </motion.span>
+  </div>
+)}
+
               </div>
+
             )
           )}
         </div>
