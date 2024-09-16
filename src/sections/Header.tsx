@@ -30,7 +30,7 @@ export const Header = () => {
         <div className="container">
           <div className="flex items-center justify-between">
 
-            <Image src={Logo} alt="Saas Logo" height={120} width={120} />
+            <Image src={Logo} alt="Saas Logo" height={320} width={320} />
 
 
             <MenuIcon

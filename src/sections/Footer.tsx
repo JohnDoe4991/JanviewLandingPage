@@ -9,11 +9,10 @@ export const Footer = () => {
         <Image src={Logo} height={40} alt="SaaS Logo" className="relative" />
         </div>
         <nav className="flex flex-col md:flex-row md:justify-center gap-6 mt-6">
-          <a href="#hero">About</a>
           <a href="#features">Features</a>
           <a href="#pricing">Pricing</a>
           <a href="#testimonials">Customers</a>
-          <a href="#">Help</a>
+          <a href="#contact">Contact</a>
         </nav>
         <p className="mt-6">&copy; 2024 Janview, Inc. All rights reserved</p>
         </div>

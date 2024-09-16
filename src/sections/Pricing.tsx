@@ -7,7 +7,7 @@ const pricingTiers = [
   {
     title: "User",
     monthlyPrice: 100,
-    description: null,
+    description: "The User plan is ideal for individuals or small teams starting out. Perfect for managing projects efficiently at an affordable price.",
     buttonText: "Get started",
     popular: false,
     inverse: false,
@@ -17,6 +17,8 @@ const pricingTiers = [
       "2GB storage",
       "Integrations",
       "Basic support",
+      "Basic analytics",
+      "Basic security features",
     ],
   },
   {
@@ -34,25 +36,25 @@ const pricingTiers = [
       "Priority support",
       "Advanced support",
       "Export support",
+      "Advanced analytics",
+      "Export capabilities",
+      "Advanced security features",
     ],
   },
   {
     title: "Business",
     monthlyPrice: 2000,
-    description: "Everything included in Pro, plus: Dedicated account manager, custom fields, advanced analytics, export capabilities, API access, advanced security features",
+    description: "Everything included in Pro, plus: Dedicated account manager, custom fields, advanced analytics, export capabilities, etc",
     buttonText: "Sign up now",
     popular: false,
     inverse: false,
     features: [
-      "Up to 5 project members",
       "Unlimited tasks and projects",
       "200GB storage",
       "Integrations",
       "Dedicated account manager",
-      "Custom fields",
       "Advanced analytics",
       "Export capabilities",
-      "API access",
       "Advanced security features",
     ],
   },
@@ -64,11 +66,11 @@ export const Pricing = () => {
       <div id="pricing" className="container">
         <div className="section-heading">
           <h2 className="section-title">Pricing</h2>
-          <p className="product-description mt-3">
+          <p className="product-description mt-3 mb-8">
             Upgrade for unlimited tasks, better integrations, exclusive features, and more.
           </p>
         </div>
-        <div className="flex flex-col gap-6 items-center mt-4 lg:flex-row lg:items-end lg:justify-center">
+        <div className="flex flex-col gap-1 items-center mt-4 lg:flex-row lg:items-end lg:justify-center">
           {pricingTiers.map(
             ({ title, monthlyPrice, description, buttonText, popular, inverse, features }) => (
               <div
@@ -125,8 +127,6 @@ export const Pricing = () => {
                     </p>
                   )}
                 </div>
-
-                {/* Changed the button to an anchor tag that links to the #contact section */}
                 <a
                   href="#contact"
                   className={twMerge(
@@ -145,7 +145,20 @@ export const Pricing = () => {
                     </li>
                   ))}
                 </ul>
+                {popular === true && (
+  <div className="flex justify-center items-center w-full text-sm px-3 py-1 rounded-xl border border-white/20 mt-4">
+    <motion.span
+      animate={{ opacity: [0.6, 1, 0.6], scale: [1, 1.1, 1] }}
+      transition={{ duration: 2, repeat: Infinity, ease: "easeInOut" }}
+      className="text-white font-bold shine-animation"
+    >
+      TOP SELLER
+    </motion.span>
+  </div>
+)}
+
               </div>
+
             )
           )}
         </div>
