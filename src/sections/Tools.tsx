@@ -8,6 +8,13 @@ import Logistics from '@/assets/Logisticss.png';
 import Image from 'next/image';
 import { useRef } from 'react';
 
+
+const splitTextIntoWords = (text) => {
+  return text.split(' ').map((word, index) => (
+    <span key={index} className="word-zoom inline-block mr-1 hover:scale-110 transition-transform duration-200">{word}</span>
+  ));
+};
+
 export const Tools = () => {
 
   const visualizeRef = useRef(null);
@@ -15,7 +22,6 @@ export const Tools = () => {
   const reportsRef = useRef(null);
   const invoicesRef = useRef(null);
   const logisticsRef = useRef(null);
-
 
   const { scrollYProgress: scrollVisualize } = useScroll({
     target: visualizeRef,
@@ -41,7 +47,6 @@ export const Tools = () => {
     target: logisticsRef,
     offset: ["start 70%", "end 30%"],
   });
-
 
   const slideInLeft = useTransform(scrollVisualize, [0, 0.5], [-100, 0]);
   const slideInRight = useTransform(scrollVisualize, [0, 0.5], [100, 0]);
@@ -74,10 +79,10 @@ export const Tools = () => {
         >
           <h3 className="text-3xl font-bold tracking-tighter bg-gradient-to-b from-black to-[#001E80] text-transparent bg-clip-text text-center mb-4">Visualize</h3>
           <p className="text-white mb-4">
-            Get a clear picture of your business operations with real-time data visualization. Our dashboard lets you centralize key business metrics, helping you make quick, informed decisions.
+            {splitTextIntoWords("Get a clear picture of your business operations with real-time data visualization.")}
           </p>
           <p className="text-[#f0f0f0]">
-            Whether it's tracking sales, monitoring progress, or managing team performance, Janview's visual tools keep you on top of it all, ensuring nothing gets missed.
+            {splitTextIntoWords("Whether it's tracking sales, monitoring progress, or managing team performance, Janview's visual tools keep you on top of it all, ensuring nothing gets missed.")}
           </p>
         </motion.div>
         <motion.div
@@ -96,10 +101,10 @@ export const Tools = () => {
         >
           <h3 className="text-3xl font-bold tracking-tighter bg-gradient-to-b from-black to-[#001E80] text-transparent bg-clip-text text-center mb-4">Manage</h3>
           <p className="text-white mb-4">
-            Stay organized and streamline client data management with Janview. From invoicing to client communication, our management tools make it easy to stay on top of customer needs.
+            {splitTextIntoWords("Stay organized and streamline client data management with Janview. From invoicing to client communication, our management tools make it easy to stay on top of customer needs.")}
           </p>
           <p className="text-[#f0f0f0]">
-            Efficiently handle customer databases, view interactions, and maintain smooth communications—all from one platform.
+            {splitTextIntoWords("Efficiently handle customer databases, view interactions, and maintain smooth communications—all from one platform.")}
           </p>
         </motion.div>
         <motion.div
@@ -118,10 +123,10 @@ export const Tools = () => {
         >
           <h3 className="text-3xl font-bold tracking-tighter bg-gradient-to-b from-black to-[#001E80] text-transparent bg-clip-text text-center mb-4">Reports</h3>
           <p className="text-white mb-4">
-            Access detailed reports at any time to stay informed on key metrics. Generate visual summaries of financials, project progress, or client accounts in just a few clicks.
+            {splitTextIntoWords("Access detailed reports at any time to stay informed on key metrics. Generate visual summaries of financials, project progress, or client accounts in just a few clicks.")}
           </p>
           <p className="text-[#f0f0f0]">
-            Use our flexible reporting tools to pull data across your organization, enabling you to forecast trends, compare performance, and drive data-driven decisions.
+            {splitTextIntoWords("Use our flexible reporting tools to pull data across your organization, enabling you to forecast trends, compare performance, and drive data-driven decisions.")}
           </p>
         </motion.div>
         <motion.div
@@ -140,10 +145,10 @@ export const Tools = () => {
         >
           <h3 className="text-3xl font-bold tracking-tighter bg-gradient-to-b from-black to-[#001E80] text-transparent bg-clip-text text-center mb-4">Invoices</h3>
           <p className="text-gray-600 mb-4">
-            Easily manage and generate invoices. Janview simplifies financial handling, helping you avoid errors and track payments with ease.
+            {splitTextIntoWords("Easily manage and generate invoices. Janview simplifies financial handling, helping you avoid errors and track payments with ease.")}
           </p>
           <p className="text-gray">
-            Automate invoicing, set up reminders, and track payments in real-time to ensure your business stays financially healthy.
+            {splitTextIntoWords("Automate invoicing, set up reminders, and track payments in real-time to ensure your business stays financially healthy.")}
           </p>
         </motion.div>
         <motion.div
@@ -162,10 +167,10 @@ export const Tools = () => {
         >
           <h3 className="text-3xl font-bold tracking-tighter bg-gradient-to-b from-black to-[#001E80] text-transparent bg-clip-text text-center mb-4">Logistics</h3>
           <p className="text-gray-600 mb-4">
-            Add new customers, update billing details, and manage logistics all from one central place. Janview's comprehensive logistics management features ensure your operations run smoothly.
+            {splitTextIntoWords("Add new customers, update billing details, and manage logistics all from one central place. Janview's comprehensive logistics management features ensure your operations run smoothly.")}
           </p>
           <p className="text-gray">
-            Stay on top of transportation, delivery schedules, inventory management, and more with an intuitive platform designed for efficiency.
+            {splitTextIntoWords("Stay on top of transportation, delivery schedules, inventory management, and more with an intuitive platform designed for efficiency.")}
           </p>
         </motion.div>
         <motion.div
