@@ -9,9 +9,9 @@ export const Tools = () => {
   return (
 <div id="tools" className="py-20 bg-[radial-gradient(ellipse_200%_100%_at_bottom_left,#EAEEFE,#183EC2_100%)] overflow-x-clip px-5 space-y-16">
 {/* Visualize Section */}
-      <div id="visualize" className="flex flex-col md:flex-row items-center">
-        <div className="flex-1 mb-6 md:mb-0 md:mr-6 bg-white bg-opacity-20 p-6 rounded-lg shadow-lg">
-          <h3 className="text-3xl font-bold text-gray-800 mb-4 text-center">Visualize</h3>
+      <div id="visualize" className="flex flex-col md:flex-row items-center bg-white bg-opacity-20 p-6 rounded-lg shadow-lg">
+        <div className="flex-1 mb-6 md:mb-0 md:mr-6">
+          <h3 className="text-3xl font-bold tracking-tighter bg-gradient-to-b from-black to-[#001E80] text-transparent bg-clip-text text-center mb-4">Visualize</h3>
           <p className="text-white mb-4">
             Get a clear picture of your business operations with real-time data visualization. Our dashboard lets you centralize key business metrics, helping you make quick, informed decisions.
           </p>
@@ -25,9 +25,9 @@ export const Tools = () => {
       </div>
 
       {/* Manage Section */}
-      <div id="manage" className="flex flex-col md:flex-row items-center">
-        <div className="flex-1 mb-6 md:mb-0 md:mr-6 bg-white bg-opacity-20 p-6 rounded-lg shadow-lg">
-          <h3 className="text-3xl font-bold text-gray-800 mb-4 text-center">Manage</h3>
+      <div id="manage" className="flex flex-col md:flex-row items-center bg-white bg-opacity-20 p-6 rounded-lg shadow-lg">
+        <div className="flex-1 mb-6 md:mb-0 md:mr-6 ">
+          <h3 className="text-3xl font-bold tracking-tighter bg-gradient-to-b from-black to-[#001E80] text-transparent bg-clip-text text-center mb-4">Manage</h3>
           <p className="text-white mb-4">
             Stay organized and streamline client data management with Janview. From invoicing to client communication, our management tools make it easy to stay on top of customer needs.
           </p>
@@ -41,9 +41,9 @@ export const Tools = () => {
       </div>
 
       {/* Reports Section */}
-      <div id="reports" className="flex flex-col md:flex-row items-center">
-        <div className="flex-1 mb-6 md:mb-0 md:mr-6 bg-white bg-opacity-20 p-6 rounded-lg shadow-lg">
-          <h3 className="text-3xl font-bold text-gray-800 mb-4 text-center">Reports</h3>
+      <div id="reports" className="flex flex-col md:flex-row items-center bg-white bg-opacity-20 p-6 rounded-lg shadow-lg">
+        <div className="flex-1 mb-6 md:mb-0 md:mr-6">
+          <h3 className="text-3xl font-bold tracking-tighter bg-gradient-to-b from-black to-[#001E80] text-transparent bg-clip-text text-center mb-4">Reports</h3>
           <p className="text-white mb-4">
             Access detailed reports at any time to stay informed on key metrics. Generate visual summaries of financials, project progress, or client accounts in just a few clicks.
           </p>
@@ -57,9 +57,9 @@ export const Tools = () => {
       </div>
 
       {/* Invoices Section */}
-      <div id="invoices" className="flex flex-col md:flex-row items-center">
-        <div className="flex-1 mb-6 md:mb-0 md:mr-6 bg-white bg-opacity-20 p-6 rounded-lg shadow-lg">
-          <h3 className="text-3xl font-bold text-gray-800 mb-4 text-center">Invoices</h3>
+      <div id="invoices" className="flex flex-col md:flex-row items-center bg-white bg-opacity-20 p-6 rounded-lg shadow-lg">
+        <div className="flex-1 mb-6 md:mb-0 md:mr-6">
+          <h3 className="text-3xl font-bold tracking-tighter bg-gradient-to-b from-black to-[#001E80] text-transparent bg-clip-text text-center mb-4">Invoices</h3>
           <p className="text-gray-600 mb-4">
             Easily manage and generate invoices. Janview simplifies financial handling, helping you avoid errors and track payments with ease.
           </p>
@@ -73,9 +73,9 @@ export const Tools = () => {
       </div>
 
       {/* Logistics Section */}
-      <div id="logistics" className="flex flex-col md:flex-row items-center">
-        <div className="flex-1 mb-6 md:mb-0 md:mr-6 bg-white bg-opacity-20 p-6 rounded-lg shadow-lg">
-          <h3 className="text-3xl font-bold text-gray-800 mb-4 text-center">Logistics</h3>
+      <div id="logistics" className="flex flex-col md:flex-row items-center bg-white bg-opacity-20 p-6 rounded-lg shadow-lg">
+        <div className="flex-1 mb-6 md:mb-0 md:mr-6 ">
+          <h3 className="text-3xl font-bold tracking-tighter bg-gradient-to-b from-black to-[#001E80] text-transparent bg-clip-text text-center mb-4">Logistics</h3>
           <p className="text-gray-600 mb-4">
             Add new customers, update billing details, and manage logistics all from one central place. Janview's comprehensive logistics management features ensure your operations run smoothly.
           </p>
