@@ -9,7 +9,7 @@ export const Tools = () => {
   return (
 <div id="tools" className="py-20 bg-[radial-gradient(ellipse_200%_100%_at_bottom_left,#EAEEFE,#183EC2_100%)] overflow-x-clip px-5 space-y-16">
 {/* Visualize Section */}
-      <div id="visualize" className="flex flex-col md:flex-row items-center bg-white bg-opacity-20 p-6 rounded-lg shadow-lg">
+      <div id="visualize" className="flex flex-col md:flex-row items-center bg-white bg-opacity-20 p-6 rounded-lg shadow-lg pulse-on-click">
         <div className="flex-1 mb-6 md:mb-0 md:mr-6">
           <h3 className="text-3xl font-bold tracking-tighter bg-gradient-to-b from-black to-[#001E80] text-transparent bg-clip-text text-center mb-4">Visualize</h3>
           <p className="text-white mb-4">
@@ -25,7 +25,7 @@ export const Tools = () => {
       </div>
 
       {/* Manage Section */}
-      <div id="manage" className="flex flex-col md:flex-row items-center bg-white bg-opacity-20 p-6 rounded-lg shadow-lg">
+      <div id="manage" className="flex flex-col md:flex-row items-center bg-white bg-opacity-20 p-6 rounded-lg shadow-lg pulse-on-click">
         <div className="flex-1 mb-6 md:mb-0 md:mr-6 ">
           <h3 className="text-3xl font-bold tracking-tighter bg-gradient-to-b from-black to-[#001E80] text-transparent bg-clip-text text-center mb-4">Manage</h3>
           <p className="text-white mb-4">
@@ -41,7 +41,7 @@ export const Tools = () => {
       </div>
 
       {/* Reports Section */}
-      <div id="reports" className="flex flex-col md:flex-row items-center bg-white bg-opacity-20 p-6 rounded-lg shadow-lg">
+      <div id="reports" className="flex flex-col md:flex-row items-center bg-white bg-opacity-20 p-6 rounded-lg shadow-lg pulse-on-click">
         <div className="flex-1 mb-6 md:mb-0 md:mr-6">
           <h3 className="text-3xl font-bold tracking-tighter bg-gradient-to-b from-black to-[#001E80] text-transparent bg-clip-text text-center mb-4">Reports</h3>
           <p className="text-white mb-4">
@@ -57,7 +57,7 @@ export const Tools = () => {
       </div>
 
       {/* Invoices Section */}
-      <div id="invoices" className="flex flex-col md:flex-row items-center bg-white bg-opacity-20 p-6 rounded-lg shadow-lg">
+      <div id="invoices" className="flex flex-col md:flex-row items-center bg-white bg-opacity-20 p-6 rounded-lg shadow-lg pulse-on-click">
         <div className="flex-1 mb-6 md:mb-0 md:mr-6">
           <h3 className="text-3xl font-bold tracking-tighter bg-gradient-to-b from-black to-[#001E80] text-transparent bg-clip-text text-center mb-4">Invoices</h3>
           <p className="text-gray-600 mb-4">
@@ -73,7 +73,7 @@ export const Tools = () => {
       </div>
 
       {/* Logistics Section */}
-      <div id="logistics" className="flex flex-col md:flex-row items-center bg-white bg-opacity-20 p-6 rounded-lg shadow-lg">
+      <div id="logistics" className="flex flex-col md:flex-row items-center bg-white bg-opacity-20 p-6 rounded-lg shadow-lg pulse-on-click">
         <div className="flex-1 mb-6 md:mb-0 md:mr-6 ">
           <h3 className="text-3xl font-bold tracking-tighter bg-gradient-to-b from-black to-[#001E80] text-transparent bg-clip-text text-center mb-4">Logistics</h3>
           <p className="text-gray-600 mb-4">
