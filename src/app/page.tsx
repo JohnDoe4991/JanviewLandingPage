@@ -9,6 +9,7 @@ import { CallToAction } from "@/sections/CallToAction";
 import { Footer } from "@/sections/Footer";
 import { ScrollToTop } from "@/sections/ScrollToTop";
 import { Contact } from "@/sections/Contact";
+import { Tools } from "@/sections/Tools";
 
 export default function Home() {
   return <>
@@ -16,6 +17,7 @@ export default function Home() {
   <ScrollToTop/>
   <Hero/>
   <Janview/>
+  <Tools/>
   <ProductShowcase/>
   <Pricing/>
   <Testimonials/>
