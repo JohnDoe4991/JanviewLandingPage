@@ -1,5 +1,6 @@
 import Logo from '@/assets/jvp-logo.png';
 import Image from 'next/image';
+import Link from 'next/link';
 
 export const Footer = () => {
   return (
@@ -13,6 +14,7 @@ export const Footer = () => {
           <a href="#pricing">Pricing</a>
           <a href="#testimonials">Customers</a>
           <a href="#contact">Contact</a>
+          <Link href="/privacy">Privacy Policy</Link>
         </nav>
         <p className="mt-6">&copy; 2024 Janview, Inc. All rights reserved</p>
         </div>
