@@ -59,6 +59,15 @@ export const Header = () => {
               >
                 Get Started
               </a>
+              <a
+  href="https://janviewpro.com"
+  target="_blank"
+  rel="noopener noreferrer"
+  className="bg-blue-800 text-white px-4 py-2 rounded-lg font-medium inline-flex items-center justify-center tracking-tight"
+>
+  Login
+</a>
+
             </nav>
 
 

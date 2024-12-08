@@ -28,8 +28,9 @@ export default function PrivacyPolicy() {
             transition: "background-color 0.3s ease",
             marginBottom: "2rem", // Space between button and main content
           }}
-          onMouseOver={(e) => (e.target.style.backgroundColor = "#0056b3")}
-          onMouseOut={(e) => (e.target.style.backgroundColor = "#007bff")}
+          onMouseOver={(e) => ((e.target as HTMLButtonElement).style.backgroundColor = "#0056b3")}
+        onMouseOut={(e) => ((e.target as HTMLButtonElement).style.backgroundColor = "#007bff")}
+
         >
           🏠 Home
         </button>
