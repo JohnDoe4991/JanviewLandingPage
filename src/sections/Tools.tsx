@@ -9,11 +9,17 @@ import Image from 'next/image';
 import { useRef } from 'react';
 
 
-const splitTextIntoWords = (text) => {
+const splitTextIntoWords = (text: string) => {
   return text.split(' ').map((word, index) => (
-    <span key={index} className="word-zoom inline-block mr-1 hover:scale-110 transition-transform duration-200">{word}</span>
+    <span
+      key={index}
+      className="word-zoom inline-block mr-1 hover:scale-110 transition-transform duration-200"
+    >
+      {word}
+    </span>
   ));
 };
+
 
 export const Tools = () => {
 
