@@ -1,8 +1,5 @@
 "use client";
 import ArrowIcon from '@/assets/arrow-right.svg';
-import CogImage from '@/assets/cog.png';
-import cylinderImage from '@/assets/cylinder.png';
-import noodleImage from '@/assets/noodle.png';
 import Image from 'next/image';
 import { motion, useScroll, useTransform, useMotionValueEvent } from 'framer-motion';
 import { useRef } from 'react';
@@ -46,42 +43,6 @@ offset: ["start end", "end start"],
 </a>
 
        </div>
-  </div>
-  <div className="mt-20 md:mt-0 md:h-[648px] md:flex-1 relative">
-    <motion.img
-    src={CogImage.src}
-    alt="Cog image"
-    className="md:absolute md:h-full md:w-auto md:max-w-none md:-left-6 lg:left-0"
-    animate={{
-      translateY: [-30, 30],
-    }}
-    transition={{
-      repeat: Infinity,
-      repeatType: "mirror",
-      duration: 3,
-      ease: "easeInOut",
-    }}
-    />
-    <motion.img
-    src={cylinderImage.src}
-    width={220}
-    height={220}
-    alt="Cylinder image"
-className="hidden md:block -top-8 -left-32 md:absolute"
-style={{
-  translateY: translateY
-}}
-    />
-    <motion.img
-    src={noodleImage.src}
-     width={220}
-     alt="Noodle image"
-     className="hidden lg:block absolute top-[524px] left-[448px] rotate-[30deg]"
-     style={{
-      rotate: 30,
-        translateY: translateY
-      }}
-      />
   </div>
   </div>
 </div>
