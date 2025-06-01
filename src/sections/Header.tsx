@@ -21,93 +21,81 @@ export const Header = () => {
           Streamline your workflow and boost your productivity
         </p>
 
-        <div className="inline-flex gap-1 items-center">
+        <a href="#contact" className="inline-flex gap-1 items-center cursor-pointer hover:underline">
           <p>Get started</p>
           <ArrowRight className="w-4 h-4 inline-flex justify-center items-center" />
-        </div>
+        </a>
+
       </div>
 
 
-      <div className="py-5">
-        <div className="container">
+      <div className="py-5 bg-[#0F0F0F] text-white shadow-sm">
+        <div className="container mx-auto px-4">
           <div className="flex items-center justify-between">
 
-            <Image src={Logo} alt="Saas Logo" height={320} width={320} />
+            <Image src={Logo} alt="Janview Logo" height={48} width={160} className="h-auto w-auto" />
 
-
+            {/* Mobile Menu Icon */}
             <MenuIcon
-              className="w-6 h-6 md:hidden cursor-pointer"
+              className="w-6 h-6 md:hidden cursor-pointer text-white"
               onClick={() => setIsMenuOpen(!isMenuOpen)}
             />
 
-
-            <nav className="hidden md:flex gap-6 text-black/60 items-center">
-              <a href="#features" onClick={handleNavClick}>
+            {/* Desktop Nav */}
+            <nav className="hidden md:flex gap-6 items-center text-[#B3B3B3]">
+              <a href="#features" onClick={handleNavClick} className="hover:text-white transition">
                 Features
               </a>
-              <a href="#pricing" onClick={handleNavClick}>
+              <a href="#pricing" onClick={handleNavClick} className="hover:text-white transition">
                 Pricing
               </a>
-              <a href="#testimonials" onClick={handleNavClick}>
+              <a href="#testimonials" onClick={handleNavClick} className="hover:text-white transition">
                 Customers
               </a>
-              <a href="#contact" onClick={handleNavClick}>
+              <a href="#contact" onClick={handleNavClick} className="hover:text-white transition">
                 Contact
               </a>
+
+              {/* Primary CTA */}
               <a
                 href="#contact"
                 onClick={handleNavClick}
-                className="bg-black text-white px-4 py-2 rounded-lg font-medium inline-flex items-center justify-center tracking-tight"
+                className="bg-[#D0D961] text-black px-4 py-2 rounded-full font-medium hover:bg-[#c4cb56] transition shadow-sm"
               >
                 Get Started
               </a>
+
+              {/* Login Link */}
               <a
                 href="https://janviewpro.com"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="bg-blue-800 text-white px-4 py-2 rounded-lg font-medium inline-flex items-center justify-center tracking-tight"
+                className="bg-[#1F1F1F] text-white px-4 py-2 rounded-full font-medium hover:bg-[#333333] transition"
               >
                 Login
               </a>
-
             </nav>
 
-
+            {/* Mobile Nav Dropdown */}
             {isMenuOpen && (
-              <div className="absolute top-20 right-0 bg-transparent mt-2 p-4 md:hidden z-10 rounded-lg w-max">
-                <nav className="flex flex-col items-end gap-3">
-                  <a
-                    href="#features"
-                    onClick={handleNavClick}
-                    className="text-black px-2 py-1 rounded cursor-pointer hover:shadow-md transition"
-                  >
+              <div className="absolute top-20 right-4 bg-[#1B1B1B] mt-2 p-4 md:hidden z-10 rounded-lg shadow-md w-52 text-white">
+                <nav className="flex flex-col gap-3">
+                  <a href="#features" onClick={handleNavClick} className="hover:text-[#D0D961] transition">
                     Features
                   </a>
-                  <a
-                    href="#pricing"
-                    onClick={handleNavClick}
-                    className="text-black px-2 py-1 rounded cursor-pointer hover:shadow-md transition"
-                  >
+                  <a href="#pricing" onClick={handleNavClick} className="hover:text-[#D0D961] transition">
                     Pricing
                   </a>
-                  <a
-                    href="#testimonials"
-                    onClick={handleNavClick}
-                    className="text-black px-2 py-1 rounded cursor-pointer hover:shadow-md transition"
-                  >
+                  <a href="#testimonials" onClick={handleNavClick} className="hover:text-[#D0D961] transition">
                     Customers
                   </a>
-                  <a
-                    href="#contact"
-                    onClick={handleNavClick}
-                    className="text-black px-2 py-1 rounded cursor-pointer hover:shadow-md transition"
-                  >
+                  <a href="#contact" onClick={handleNavClick} className="hover:text-[#D0D961] transition">
                     Contact
                   </a>
                   <a
                     href="#contact"
                     onClick={handleNavClick}
-                    className="bg-black text-white px-4 py-2 rounded-lg font-medium inline-flex items-center justify-center tracking-tight w-full text-center hover:shadow-md transition sm:hidden"
+                    className="bg-[#D0D961] text-black px-4 py-2 rounded-full text-center font-medium hover:bg-[#c4cb56] transition"
                   >
                     Get Started
                   </a>
@@ -117,6 +105,7 @@ export const Header = () => {
           </div>
         </div>
       </div>
+
     </header>
   );
 };
