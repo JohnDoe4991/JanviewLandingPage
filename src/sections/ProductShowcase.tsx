@@ -1,8 +1,8 @@
 "use client";
 import { useEffect, useRef } from 'react';
 import productImage from '@/assets/BusinessMetrics.png';
-import pyramidImage from '@/assets/pyramid.png';
-import tubeImage from '@/assets/tube.png';
+import pyramidImage2 from '@/assets/pyramid2.png';
+import tubeImage from '@/assets/tube2.png';
 import UnitFranchise from '@/assets/unitFrachises.png';
 import Image from 'next/image';
 import { motion, useScroll, useTransform } from 'framer-motion';
@@ -31,13 +31,8 @@ export const ProductShowcase = () => {
       { threshold: 0.5 }
     );
 
-    if (productRef.current) {
-      observer.observe(productRef.current);
-    }
-
-    if (franchiseRef.current) {
-      observer.observe(franchiseRef.current);
-    }
+    if (productRef.current) observer.observe(productRef.current);
+    if (franchiseRef.current) observer.observe(franchiseRef.current);
 
     return () => {
       if (productRef.current) observer.unobserve(productRef.current);
@@ -45,20 +40,28 @@ export const ProductShowcase = () => {
     };
   }, []);
 
+
   return (
-    <section  ref={sectionRef} className="bg-gradient-to-b from-[#FFFFFF] to-[#D2DCFF] py-16 overflow-x-clip">
-      <div className="container">
-        <div className="section-heading">
+    <section
+      ref={sectionRef}
+      className="bg-gradient-to-b from-[#1F1F1F] via-[#0F0F0F] to-black py-16 overflow-x-clip text-white"
+    >
+
+      <div className="container px-4 md:px-8">
+        <div className="section-heading text-center">
           <div className="flex justify-center">
-            <div className="tag">Boost your productivity with Janview</div>
+            <div className="tag bg-[#D0D961] text-black px-4 py-1 rounded-full font-semibold text-sm">
+              Boost your productivity with Janview
+            </div>
           </div>
-          <h2 className="section-title mt-5">
+          <h2 className="section-title mt-5 text-4xl md:text-5xl font-bold tracking-tight bg-gradient-to-br from-white via-[#D0D961] to-white bg-clip-text text-transparent">
             A more effective way to track progress
           </h2>
-          <p className="product-description mt-5">
-          Janview helps you monitor progress, collaborate with your team, and manage tasks more efficiently, ensuring every aspect of your business runs smoothly.
+          <p className="product-description mt-5 text-[#B3B3B3] text-lg max-w-3xl mx-auto">
+            Janview helps you monitor progress, collaborate with your team, and manage tasks more efficiently, ensuring every aspect of your business runs smoothly.
           </p>
         </div>
+
         <div className="relative">
           <motion.div
             className="mt-10 mb-10 transform transition duration-500 ease-in-out scale-50 opacity-0"
@@ -68,29 +71,35 @@ export const ProductShowcase = () => {
           >
             <Image src={productImage} alt="Product Image" layout="intrinsic" />
           </motion.div>
+
           <motion.div
             className="hidden md:block absolute -right-36 -top-32"
             style={{ translateY }}
           >
-            <Image src={pyramidImage} alt="Pyramid Image" width={250} height={250} layout="intrinsic" />
+            <Image src={pyramidImage2} alt="Pyramid Image" width={250} height={250} layout="intrinsic" />
           </motion.div>
+
           <motion.div
             className="hidden md:block absolute bottom-24 -left-36"
             style={{ translateY }}
           >
             <Image src={tubeImage} alt="Tube Image" width={220} height={220} layout="intrinsic" />
           </motion.div>
-          <div className="max-w-[540px] mx-auto">
+
+          <div className="max-w-[540px] mx-auto text-center">
             <div className="flex justify-center">
-              <div className="tag">Convenient and comprehensive, all in one location.</div>
+              <div className="tag bg-[#D0D961] text-black px-4 py-1 rounded-full font-semibold text-sm">
+                Convenient and comprehensive, all in one location.
+              </div>
             </div>
-            <h2 className="section-title mt-5">
+            <h2 className="section-title mt-5 text-4xl md:text-5xl font-bold tracking-tight bg-gradient-to-br from-white via-[#D0D961] to-white bg-clip-text text-transparent">
               Maintain a close connection with your clients.
             </h2>
-            <p className="product-description mt-5">
-            Stay connected with your clients and your team by centralizing essential business information and resources in one easy-to-access platform.
+            <p className="product-description mt-5 text-[#B3B3B3] text-lg">
+              Stay connected with your clients and your team by centralizing essential business information and resources in one easy-to-access platform.
             </p>
           </div>
+
           <motion.div
             className="mt-10 transform transition duration-500 ease-in-out scale-50 opacity-0"
             ref={franchiseRef}
